@@ -41,7 +41,7 @@ data:
         - needs-rebase
         repos:
         - salaboy/jx3-cluster
-      target_url: http://deck-jx.-jx.
+      target_url: http://deck-jx.-jx.35.223.222.15.nip.io
 kind: ConfigMap
 metadata:
   creationTimestamp: null
