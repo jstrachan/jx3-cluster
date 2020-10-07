@@ -9,4 +9,5 @@ spec:
     providerKind: github
     repositories:
     - name: fmtok8s-monolith
+    - name: go-quickstart-test
     scheduler: in-repo
