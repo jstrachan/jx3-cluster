@@ -80,7 +80,7 @@ releases:
   name: pusher-wave
   namespace: secret-infra
 - chart: dev/go-quickstart-test
-  version: 0.0.1
+  version: 0.0.2
   name: go-quickstart-test
   namespace: jx-staging
 templates: {}
