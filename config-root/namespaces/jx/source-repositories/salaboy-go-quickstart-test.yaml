@@ -1,0 +1,22 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: salaboy
+    provider: github
+    repository: go-quickstart-test
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+  name: salaboy-go-quickstart-test
+  namespace: jx
+spec:
+  httpCloneURL: https://github.com/salaboy/go-quickstart-test.git
+  org: salaboy
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: go-quickstart-test
+  scheduler:
+    kind: ""
+    name: in-repo
+  url: https://github.com/salaboy/go-quickstart-test
