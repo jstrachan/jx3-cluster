@@ -1,0 +1,50 @@
+# Source: go-quickstart-test/templates/release.yaml
+apiVersion: jenkins.io/v1
+kind: Release
+metadata:
+  creationTimestamp: "2020-10-07T14:35:30Z"
+  deletionTimestamp: null
+  name: 'go-quickstart-test-0.0.1'
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  commits:
+    - author:
+        accountReference:
+          - provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: salaboy
+      branch: master
+      committer:
+        accountReference:
+          - id: salaboy-0
+            provider: jenkins.io/git-github-userid
+        email: jenkins-x@googlegroups.com
+        name: salaboy
+      message: |
+        release 0.0.1
+      sha: ccbc76a27d1ee92b0ae5d70aedaf0c7e7d981b6b
+    - author:
+        accountReference:
+          - provider: jenkins.io/git-github-userid
+        email: salaboy@gmail.com
+        name: salaboy
+      branch: master
+      committer:
+        accountReference:
+          - id: salaboy-1
+            provider: jenkins.io/git-github-userid
+        email: salaboy@gmail.com
+        name: salaboy
+      message: |
+        Jenkins X build pack
+      sha: 89c9618571eada00719bc347bc0a5fa1974c979c
+  gitCloneUrl: https://github.com/salaboy/go-quickstart-test.git
+  gitHttpUrl: https://github.com/salaboy/go-quickstart-test
+  gitOwner: salaboy
+  gitRepository: go-quickstart-test
+  name: 'go-quickstart-test'
+  releaseNotesURL: https://github.com/salaboy/go-quickstart-test/releases/tag/v0.0.1
+  version: v0.0.1
+status: {}

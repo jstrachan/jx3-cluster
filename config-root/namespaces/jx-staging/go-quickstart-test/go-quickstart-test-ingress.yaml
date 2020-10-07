@@ -1,0 +1,18 @@
+# Source: go-quickstart-test/templates/ingress.yaml
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  name: go-quickstart-test
+  namespace: jx-staging
+  labels:
+    gitops.jenkins-x.io/pipeline: 'namespaces'
+spec:
+  rules:
+    - http:
+        paths:
+          - backend:
+              serviceName: go-quickstart-test
+              servicePort: 80
+      host: go-quickstart-test-jx-staging.35.223.222.15.nip.io
