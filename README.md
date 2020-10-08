@@ -10,5 +10,5 @@ Now git commit and push any changes...
 
 ```bash 
 git add *
-git commit -a -m "chore: Jenkins X changes"
+git commit -a -m "chore: Jenkins X changes" 
 ```
